@@ -2,3 +2,6 @@
 # See our documentation overview on Workspaces: https://docs.dagster.io/overview/repositories-workspaces/workspaces
 load_from:
   - python_package: etl
+# run_retries:
+#   enabled: true
+#   max_retries: 3 # Sets a default for all jobs. 0 if not set

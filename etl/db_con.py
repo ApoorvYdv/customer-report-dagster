@@ -1,8 +1,14 @@
 import os
 import pyodbc
 from sqlalchemy import create_engine
+import mysql.connector
 
-#
+def get_mysql_conn():
+    conn = mysql.connector.connect(host='localhost', user='root', password='apoorv', database='customer-details')
+    try:
+        return conn
+    except:
+        print("Error loading the config file")
 
 def get_sql_conn():
     """return db connection."""
