@@ -7,7 +7,6 @@ from etl.db_con import get_mysql_conn, get_sql_conn, get_postgres_creds
 
 #import needed libraries
 from sqlalchemy import create_engine
-import pyodbc
 import boto3
 from fpdf import FPDF
 import pandas as pd
